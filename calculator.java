@@ -43,7 +43,8 @@ public class calculator {
 
         int exit=0;
 
-        while (exit!=1) {
+        while (exit!=1)
+        {
             switch (choice) {
                 case 1:
                     System.out.println(add(a, b));
@@ -67,6 +68,16 @@ public class calculator {
 
                 default: System.out.println("Wrong choice");
             }
+
+            System.out.println("Enter a value for choice:");
+            choice=sc.nextInt();
+
+            System.out.println("Enter 2 numbers:");
+
+            a=sc.nextInt();
+            b=sc.nextInt();
+
+
         }
 
     }
