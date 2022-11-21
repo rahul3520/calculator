@@ -26,7 +26,7 @@ public class calculator {
 
         System.out.println("Select an operation:");
 
-        System.out.println("1:Addition \n 2:Subtraction \n 3:Multiplication \n 4:Division\n");
+        System.out.println("1:Addition \n 2:Subtraction \n 3:Multiplication \n 4:Division\n 5:Exit");
 
         int choice=0;
 
@@ -41,22 +41,32 @@ public class calculator {
         int a=sc.nextInt();
         int b=sc.nextInt();
 
+        int exit=0;
 
-        switch(choice)
-        {
-            case 1: System.out.println(add(a,b));
+        while (exit!=1) {
+            switch (choice) {
+                case 1:
+                    System.out.println(add(a, b));
                     break;
 
-            case 2: System.out.println(sub(a,b));
+                case 2:
+                    System.out.println(sub(a, b));
                     break;
 
-            case 3: System.out.println(mul(a,b));
+                case 3:
+                    System.out.println(mul(a, b));
                     break;
 
-            case 4: System.out.println(div(a,b));
+                case 4:
+                    System.out.println(div(a, b));
                     break;
 
-            default: System.out.println("Wrong choice");
+                case 5:
+                    exit = 1;
+                    break;
+
+                default: System.out.println("Wrong choice");
+            }
         }
 
     }
