@@ -19,7 +19,19 @@ public class calculator {
 
     public static int div(int a,int b)
     {
-        return a/b;
+        int q=0;
+        try
+        {
+            q=a/b;
+
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+        return q;
+
     }
 
     public static void main(String[] args) {
